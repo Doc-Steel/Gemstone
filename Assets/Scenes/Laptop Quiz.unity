@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 518031265}
   - component: {fileID: 518031267}
   - component: {fileID: 518031266}
+  - component: {fileID: 518031268}
   m_Layer: 5
   m_Name: 'SubRoom: Closed Laptop'
   m_TagString: Untagged
@@ -194,6 +195,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518031264}
   m_CullTransparentMesh: 1
+--- !u!114 &518031268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518031264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbf23d88ee3380478daf24ac51e7e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 518031264}
 --- !u!1 &609631457
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +323,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 2.1504974, y: 56.8495}
+  m_AnchoredPosition: {x: 2.1505127, y: 56.849487}
   m_SizeDelta: {x: -89.2495, y: 50.6877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &653137780
@@ -333,8 +347,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0, g: 0, b: 0, a: 0.69411767}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -355,7 +369,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 653137781}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1905445633}
+        m_TargetAssemblyTypeName: ShowandHideObject, Assembly-CSharp
+        m_MethodName: hideGameObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 518031268}
+        m_TargetAssemblyTypeName: ShowandHideObject, Assembly-CSharp
+        m_MethodName: showGameObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2059330429}
+        m_TargetAssemblyTypeName: ShowandHideObject, Assembly-CSharp
+        m_MethodName: hideGameObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &653137781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -428,7 +478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.048492, y: 105.85435}
+  m_AnchoredPosition: {x: 12.048462, y: 105.85434}
   m_SizeDelta: {x: -22.3758, y: -112.7393}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &810967621
@@ -478,7 +528,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.25
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -677,6 +727,7 @@ GameObject:
   - component: {fileID: 1905445630}
   - component: {fileID: 1905445632}
   - component: {fileID: 1905445631}
+  - component: {fileID: 1905445633}
   m_Layer: 5
   m_Name: 'SubRoom: Open Laptop '
   m_TagString: Untagged
@@ -741,6 +792,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905445629}
   m_CullTransparentMesh: 1
+--- !u!114 &1905445633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905445629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbf23d88ee3380478daf24ac51e7e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 1905445629}
 --- !u!1 &1926625950
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,7 +856,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -856,6 +920,7 @@ GameObject:
   - component: {fileID: 2059330426}
   - component: {fileID: 2059330428}
   - component: {fileID: 2059330427}
+  - component: {fileID: 2059330429}
   m_Layer: 5
   m_Name: Quiz Screen Panel
   m_TagString: Untagged
@@ -881,8 +946,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 114.1558, y: -31.9449}
-  m_SizeDelta: {x: -370.019, y: -187.8835}
+  m_AnchoredPosition: {x: 283.5189, y: -73.9937}
+  m_SizeDelta: {x: -895.6287, y: -440.1761}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2059330427
 MonoBehaviour:
@@ -922,6 +987,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059330425}
   m_CullTransparentMesh: 1
+--- !u!114 &2059330429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059330425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbf23d88ee3380478daf24ac51e7e1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: {fileID: 2059330425}
 --- !u!1 &2092583581
 GameObject:
   m_ObjectHideFlags: 0
